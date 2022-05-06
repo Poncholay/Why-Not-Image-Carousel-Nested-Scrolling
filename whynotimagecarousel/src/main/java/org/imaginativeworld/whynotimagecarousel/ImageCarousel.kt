@@ -1152,6 +1152,16 @@ class ImageCarousel(
         }
     }
 
+    /**
+     * Update recyclerview nestedScrollingEnabled
+     *
+     * @param enabled New recycler view nestedScrollingEnabled.
+     */
+    override fun setNestedScrollingEnabled(enabled: Boolean) {
+        super.setNestedScrollingEnabled(enabled)
+        recyclerView.isNestedScrollingEnabled = enabled
+    }
+
     // ----------------------------------------------------------------
 
     /**
